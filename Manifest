@@ -1,0 +1,12 @@
+test/database.yml
+test/schema.rb
+test/conventionally_scoped_names_controller_test.rb
+test/helper.rb
+test/conventionally_scoped_names_test.rb
+test/fixtures/posts.yml
+test/test_helper.rb
+Manifest
+README.rdoc
+lib/conventionally_scoped_names.rb
+Rakefile
+init.rb

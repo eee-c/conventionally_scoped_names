@@ -1,0 +1,18 @@
+= ConventionallyScopedNames
+
+ConventionallyScopedNames is an ActionController plugin/gem by Chris Strom - http://japhr.blogspot.com
+
+Given an ActiveRecord object (e.g. Post) with named_scopes, ConventionallyScopedNames provides a scopes_for(Post) controller method that will apply requested named_scopes against the target.
+
+Handy for use in index methods:
+
+  class PostsController < ApplicationController
+    def index
+      @posts = scopes_for(Post)
+    end
+  end
+
+More information can be found at:
+
+http://japhr.blogspot.com/2008/01/named-scopes-in-views-part-1.html
+http://japhr.blogspot.com/2009/01/named-scopes-in-views-part-2.html

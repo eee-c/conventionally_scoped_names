@@ -1,0 +1,44 @@
+foo_published_this_month:
+  title: Foo This Month
+  last_modified: <%= (Time.now.beginning_of_month + 1.day).to_date.to_s %>
+  status: published
+
+foo_published_one_month_ago:
+  title: Foo Last Month
+  last_modified: <%= (1.month.ago + 1.day).to_date.to_s %>
+  status: published
+
+foo_published_one_year_ago:
+  title: Foo Last Year
+  last_modified: <%= (1.year.ago + 1.day).to_date.to_s %>
+  status: published
+
+bar_drafted_this_month:
+  title: Bar This Month
+  last_modified: <%= (Time.now.beginning_of_month + 2.day).to_date.to_s %>
+  status: draft
+
+bar_drafted_one_month_ago:
+  title: Bar Last Month
+  last_modified: <%= (1.month.ago + 2.day).to_date.to_s %>
+  status: draft
+
+bar_drafted_one_year_ago:
+  title: Bar Last Year
+  last_modified: <%= (1.year.ago + 2.day).to_date.to_s %>
+  status: draft
+
+baz_archived_this_month:
+  title: Baz This Month
+  last_modified: <%= (Time.now.beginning_of_month + 3.day).to_date.to_s %>
+  status: archived
+
+baz_archived_one_month_ago:
+  title: Baz Last Month
+  last_modified: <%= (1.month.ago + 3.day).to_date.to_s %>
+  status: archived
+
+baz_archived_one_year_ago:
+  title: Baz Last Year
+  last_modified: <%= (1.year.ago + 3.day).to_date.to_s %>
+  status: archived
